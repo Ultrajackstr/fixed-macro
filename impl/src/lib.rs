@@ -1,15 +1,16 @@
-mod dispatch;
-
-use std::str::FromStr;
+#![feature(generic_const_exprs)]
 
 use proc_macro::TokenStream;
-use proc_macro_error::{abort, proc_macro_error};
+use std::str::FromStr;
 
+use proc_macro_error::{abort, proc_macro_error};
 use quote::{format_ident, quote};
 use syn::{
-    parse::{self, Parse, ParseStream},
-    parse_macro_input, Ident, Lit, Token,
+    Ident,
+    Lit, parse::{self, Parse, ParseStream}, parse_macro_input, Token,
 };
+
+mod dispatch;
 
 struct FixedType {
     signed: bool,

@@ -22,9 +22,9 @@ categories = ["algorithms", "data-structures", "science"]
 members = [".", "impl", "types"]
 
 [dependencies]
-fixed = "1"
-fixed-macro-impl = { version = "1.2.0", path = "impl" }  # !V
-fixed-macro-types = { version = "1.2.0", path = "types" }  # !V
+fixed = "2.0.0-alpha.12"
+fixed-macro-impl = {path = "impl"}  # !V
+fixed-macro-types = {path = "types"}  # !V
 
 [dev-dependencies]
 trybuild = "1.0"
