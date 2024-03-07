@@ -22,7 +22,7 @@ categories = ["algorithms", "data-structures", "science"]
 members = [".", "impl", "types"]
 
 [dependencies]
-fixed = "2.0.0-alpha.25.1"
+fixed = "2.0.0-alpha.26.0"
 fixed-macro-impl = {path = "impl"}  # !V
 fixed-macro-types = {path = "types"}  # !V
 
